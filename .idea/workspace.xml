@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/get_data.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/post_data.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/controller/ItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/model/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/repository/ItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/service/ItemService.java" afterDir="false" />
+    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="1. post, get method via PostgreSQL ok&#10;2. add test post/get bash script">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/controller/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +50,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
@@ -95,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698936064166</updated>
       <workItem from="1698936065159" duration="3681000" />
-      <workItem from="1698939759180" duration="4903000" />
+      <workItem from="1698939759180" duration="6616000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Web ok via docker-compose">
       <option name="closed" value="true" />
@@ -121,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698939403134</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1. post, get method via PostgreSQL ok&#10;2. add test post/get bash script">
+      <option name="closed" value="true" />
+      <created>1698944788355</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698944788355</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +135,7 @@
     <MESSAGE value="Basic Web ok via docker-compose" />
     <MESSAGE value="rename Main.java" />
     <MESSAGE value="add uiDesigner.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="add uiDesigner.xml" />
+    <MESSAGE value="1. post, get method via PostgreSQL ok&#10;2. add test post/get bash script" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. post, get method via PostgreSQL ok&#10;2. add test post/get bash script" />
   </component>
 </project>

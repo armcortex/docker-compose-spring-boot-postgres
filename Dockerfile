@@ -1,17 +1,5 @@
-## FROM maven:3.8.2-jdk-8 # for Java 8
-#FROM maven:3.8.5-openjdk-17
-#
-#WORKDIR /demo-app
-#COPY . .
-#RUN mvn clean install
-#
-#CMD mvn spring-boot:run
-
-
-# Use the specified Maven version with OpenJDK 17
 FROM maven:3.8.5-openjdk-17
 
-# Set the working directory in the Docker image
 WORKDIR /demo-app
 
 # First, copy the pom.xml file. This layer will be cached until the pom.xml file changes.
