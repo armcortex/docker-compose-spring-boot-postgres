@@ -20,8 +20,12 @@
    Reference :
    https://locust.io/
 
+## Start Demo App
+- `docker-compose up`
+
 ## Remove All
 - `docker compose down --rmi all`
 
-## Python
-- `docker-compose exec python-env python -c "import os; print(os.getcwd())"`
+## Python Test POST/GET Method
+- `docker-compose exec python-env python ./script/post_get_test.py`
+![GET/POST Testing](./doc/post_get_tests.png)

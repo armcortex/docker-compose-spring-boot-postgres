@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="add README.md">
-      <change afterPath="$PROJECT_DIR$/Dockerfile.python" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/post_get_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="python test POST/GET via database ok&#10;&#10;1. Revise docker-compose.yml&#10;2. Add Dockerfile.python&#10;3. Add post_get_test.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile.python" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile.python" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/post_get_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/post_get_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +119,7 @@
       <workItem from="1698936065159" duration="3681000" />
       <workItem from="1698939759180" duration="9337000" />
       <workItem from="1698999799955" duration="2042000" />
-      <workItem from="1699001852787" duration="3645000" />
+      <workItem from="1699001852787" duration="6910000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Web ok via docker-compose">
       <option name="closed" value="true" />
@@ -177,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699001104663</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="python test POST/GET via database ok&#10;&#10;1. Revise docker-compose.yml&#10;2. Add Dockerfile.python&#10;3. Add post_get_test.py">
+      <option name="closed" value="true" />
+      <created>1699005630467</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699005630467</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,13 +199,14 @@
     <MESSAGE value="clean" />
     <MESSAGE value="add python image in docker-compose.yml ok" />
     <MESSAGE value="add README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="add README.md" />
+    <MESSAGE value="python test POST/GET via database ok&#10;&#10;1. Revise docker-compose.yml&#10;2. Add Dockerfile.python&#10;3. Add post_get_test.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="python test POST/GET via database ok&#10;&#10;1. Revise docker-compose.yml&#10;2. Add Dockerfile.python&#10;3. Add post_get_test.py" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/demo_app$post_get_test.coverage" NAME="post_get_test Coverage Results" MODIFIED="1699005339976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/script" />
+    <SUITE FILE_PATH="coverage/demo_app$post_get_test.coverage" NAME="post_get_test Coverage Results" MODIFIED="1699008405893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/script" />
   </component>
 </project>
