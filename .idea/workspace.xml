@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="add doc/pic">
+    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="add explanations into README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile.python" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile.python" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/get_data.sh" beforeDir="false" afterPath="$PROJECT_DIR$/script/test_get_method.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/post_data.sh" beforeDir="false" afterPath="$PROJECT_DIR$/script/tests_post_method.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/post_get_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/tests_post_get_method.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/controller/ItemController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +116,7 @@
       <workItem from="1698936065159" duration="3681000" />
       <workItem from="1698939759180" duration="9337000" />
       <workItem from="1698999799955" duration="2042000" />
-      <workItem from="1699001852787" duration="12053000" />
+      <workItem from="1699001852787" duration="13230000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Web ok via docker-compose">
       <option name="closed" value="true" />
@@ -211,7 +206,31 @@
       <option name="project" value="LOCAL" />
       <updated>1699009093336</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add OpenAPI func">
+      <option name="closed" value="true" />
+      <created>1699014154113</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699014154113</updated>
+    </task>
+    <task id="LOCAL-00013" summary="rename files">
+      <option name="closed" value="true" />
+      <created>1699014181362</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1699014181362</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add explanations into README.md">
+      <option name="closed" value="true" />
+      <created>1699014275197</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1699014275197</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +259,10 @@
     <MESSAGE value="Python unit test with truncate table&#10;&#10;1. add database envi to python-env docker-compose.yml&#10;2. add python lib in Dockerfile.python&#10;3. truncate table in post_get_test.py&#10;4." />
     <MESSAGE value="update readme with basic operate description" />
     <MESSAGE value="add doc/pic" />
-    <option name="LAST_COMMIT_MESSAGE" value="add doc/pic" />
+    <MESSAGE value="add OpenAPI func" />
+    <MESSAGE value="rename files" />
+    <MESSAGE value="add explanations into README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add explanations into README.md" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
