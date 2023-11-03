@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="update README.md `docker-compose run` so that tqdm can display correctly">
+    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="fix postgresql id key can't auto-increment in python issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script/insert_data_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/insert_data_python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/model/Item.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699036460868</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="fix postgresql id key can't auto-increment in python issue">
+      <option name="closed" value="true" />
+      <created>1699037276692</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1699037276692</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +346,8 @@
     <MESSAGE value="update README.md" />
     <MESSAGE value="add tqdm.range" />
     <MESSAGE value="update README.md `docker-compose run` so that tqdm can display correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README.md `docker-compose run` so that tqdm can display correctly" />
+    <MESSAGE value="fix postgresql id key can't auto-increment in python issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix postgresql id key can't auto-increment in python issue" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
