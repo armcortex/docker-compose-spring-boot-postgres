@@ -1,0 +1,8 @@
+FROM python:3.11.6
+
+WORKDIR app
+
+COPY ./script/post_get_test.py .
+
+RUN pip install --no-cache-dir requests
+

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="Black">
+    <option name="sdkName" value="Remote Python 3.11.6 Docker Compose (python-env at [/Users/mcs51/Library/CloudStorage/Dropbox/MAC_M2/Design/item/job/20230824/company/銓安智慧/20231102_assignment/docker-compose-spring-boot-postgres/demo-app/docker-compose.yml])" />
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -8,7 +11,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" default="true" project-jdk-name="16" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" default="true" project-jdk-name="Remote Python 3.11.6 Docker Compose (python-env at [/Users/mcs51/Library/CloudStorage/Dropbox/MAC_M2/Design/item/job/20230824/company/銓安智慧/20231102_assignment/docker-compose-spring-boot-postgres/demo-app/docker-compose.yml])" project-jdk-type="Python SDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

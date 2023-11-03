@@ -16,25 +16,31 @@ services:
   app:
     depends_on:
       - postgresdb
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     restart: on-failure
     env_file: ./.env
     ports:
       - $SPRING_LOCAL_PORT:$SPRING_DOCKER_PORT
     environment:
       SPRING_APPLICATION_JSON: '{
-        "spring.datasource.url"  : "jdbc:postgresql://postgresdb:$POSTGRESDB_DOCKER_PORT/$POSTGRESDB_DATABASE",
-        "spring.datasource.username" : "$POSTGRESDB_USER",
-        "spring.datasource.password" : "$POSTGRESDB_ROOT_PASSWORD",
-        "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.PostgreSQLDialect",
-        "spring.jpa.hibernate.ddl-auto" : "update"
+        "spring.datasource.url": "jdbc:postgresql://postgresdb:$POSTGRESDB_DOCKER_PORT/$POSTGRESDB_DATABASE",
+        "spring.datasource.username": "$POSTGRESDB_USER",
+        "spring.datasource.password": "$POSTGRESDB_ROOT_PASSWORD",
+        "spring.jpa.properties.hibernate.dialect": "org.hibernate.dialect.PostgreSQLDialect",
+        "spring.jpa.hibernate.ddl-auto": "update"
       }'
     volumes:
       - .m2:/root/.m2
     stdin_open: true
     tty: true
   python-env:
-    image: python:3.11.6
+    depends_on:
+      - postgresdb
+    build:
+      context: .
+      dockerfile: Dockerfile.python
     stdin_open: true
     tty: true
     volumes:
