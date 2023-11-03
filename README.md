@@ -64,8 +64,14 @@ Result
 - Python lib Method with multi-processing
   - `docker-compose run python-env python ./script/insert_data_python.py`
 
-## Step . Check Table Count
+Result
+![Insert 10k data](./doc/insert_10k.png)
+
+## Step 5. Check Table Count
 - `docker-compose exec  postgresdb psql -U $POSTGRESDB_USER -d $POSTGRESDB_DATABASE -c "SELECT COUNT(*) FROM public.items;"`
+
+Result
+![Check Table Count](./doc/check_table_count.png)
 
 ## Remove All
 - `docker-compose down --rmi all`
