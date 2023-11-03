@@ -8,13 +8,13 @@ public class Item {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @Column(name="First Name")
+    @Column(name="first_name")
     private String fname;
 
-    @Column(name="Last Name")
+    @Column(name="last_name")
     private String lname;
 
-    @Column(name="Country")
+    @Column(name="country")
     private String country;
 
     public Item() {
