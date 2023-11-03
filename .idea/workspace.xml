@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="add API's description code">
+    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="update doc/*.png">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/api-docs.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/api-docs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/openapi_spec.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/openapi_spec.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +116,7 @@
       <workItem from="1698936065159" duration="3681000" />
       <workItem from="1698939759180" duration="9337000" />
       <workItem from="1698999799955" duration="2042000" />
-      <workItem from="1699001852787" duration="13670000" />
+      <workItem from="1699001852787" duration="14559000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Web ok via docker-compose">
       <option name="closed" value="true" />
@@ -240,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699015187922</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update doc/*.png">
+      <option name="closed" value="true" />
+      <created>1699015738236</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1699015738236</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +279,8 @@
     <MESSAGE value="rename files" />
     <MESSAGE value="add explanations into README.md" />
     <MESSAGE value="add API's description code" />
-    <option name="LAST_COMMIT_MESSAGE" value="add API's description code" />
+    <MESSAGE value="update doc/*.png" />
+    <option name="LAST_COMMIT_MESSAGE" value="update doc/*.png" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

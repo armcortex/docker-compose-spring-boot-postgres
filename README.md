@@ -18,6 +18,10 @@
    模擬五百位使用者同時呼叫, 產出測試報告
    Reference: https://locust.io/
 
+## Step 0. Init
+Load parameters into shell environments
+- `source .env`
+
 ## Step 1. Start Demo App
 - `docker-compose up`
 
@@ -36,7 +40,7 @@ Result
 
 
 ## Step 3. Check database table content
-- `docker-compose exec  postgresdb psql -U postgres -d user_db -c "SELECT t.* FROM public.items t LIMIT 5;"`
+- `docker-compose exec  postgresdb psql -U $POSTGRESDB_USER -d $POSTGRESDB_DATABASE -c "SELECT t.* FROM public.items t LIMIT 5;"`
 
 After step 2., it should have 5 data in the table.
 
@@ -56,6 +60,8 @@ api-docs
 Result
 ![API Docs](./doc/api-docs.png)
 
+## Step 4. Check Table Count
+- `docker-compose exec  postgresdb psql -U $POSTGRESDB_USER -d $POSTGRESDB_DATABASE -c "SELECT COUNT(*) FROM public.items;"`
 
 ## Remove All
 - `docker compose down --rmi all`
