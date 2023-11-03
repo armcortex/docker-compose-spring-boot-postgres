@@ -41,6 +41,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.python
+    environment:
+      - DB_HOST=postgresdb
+      - DB_USER=$POSTGRESDB_USER
+      - DB_PASSWORD=$POSTGRESDB_ROOT_PASSWORD
+      - DB_NAME=$POSTGRESDB_DATABASE
     stdin_open: true
     tty: true
     volumes:

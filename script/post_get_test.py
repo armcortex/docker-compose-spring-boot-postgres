@@ -1,5 +1,8 @@
+import os
 import unittest
 import requests
+import psycopg2
+import datetime
 
 BASE_URL = "http://app:8080/item"
 
@@ -16,13 +19,18 @@ post_data = [
     {"fname": "Edward", "lname": "Fisher", "country": "New Zealand"},
 ]
 
-post_data2 = [
-    {"fname": "Alice", "lname": "Smith", "country": "Canada"},
-    {"fname": "Bob", "lname": "Brown", "country": "Australia"},
-    {"fname": "Charlie", "lname": "Davis", "country": "UK"},
-    {"fname": "Diana", "lname": "Evans", "country": "USA"},
-    {"fname": "Edward", "lname": "Fisher", "country": "New Zealand"},
-]
+DB_CONFIG = {
+    "dbname": os.environ.get("DB_NAME", "test_db"),
+    "user": os.environ.get("DB_USER", "test_user"),
+    "password": os.environ.get("DB_PASSWORD", "test_password"),
+    "host": os.environ.get("DB_HOST", "localhost"),
+}
+
+def drop_table_if_exists(cursor, table_name):
+    cursor.execute(f"""
+        TRUNCATE TABLE {table_name};
+    """)
+
 
 def deep_compare(d1, d2):
     if isinstance(d1, dict) and isinstance(d2, dict):
@@ -38,6 +46,19 @@ def deep_compare(d1, d2):
         return d1 == d2
 
 class TestItemAPI(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        print(f"Tests started at {datetime.datetime.now()}")
+        cls.connection = psycopg2.connect(**DB_CONFIG)
+        cls.connection.autocommit = True
+        with cls.connection.cursor() as cursor:
+            drop_table_if_exists(cursor, "items")
+
+    @classmethod
+    def tearDownClass(cls):
+        print(f"Tests finished at {datetime.datetime.now()}")
+        cls.connection.close()
+
     def test_post_and_get(self):
         # Perform POST requests and verify response
         for data in post_data:
@@ -67,4 +88,3 @@ class TestItemAPI(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-    # print('Yoooo')

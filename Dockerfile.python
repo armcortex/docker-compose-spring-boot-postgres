@@ -4,5 +4,7 @@ WORKDIR app
 
 COPY ./script/post_get_test.py .
 
-RUN pip install --no-cache-dir requests
+RUN pip install --no-cache-dir \
+    requests \
+    psycopg2
 
