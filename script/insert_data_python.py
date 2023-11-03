@@ -68,8 +68,7 @@ def main():
     with PostgresDatabaseManager(DB_CONFIG) as db:
         # Insert data into the 'items' table
         for id in tqdm(range(INSERT_DATA_COUNT), desc='Inserting data'):
-            item_data = {'id': id,
-                         'first_name': random_names.First(),
+            item_data = {'first_name': random_names.First(),
                          'last_name': random_names.Last(),
                          'country': random_names.Country()
                          }
