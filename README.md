@@ -61,7 +61,7 @@ Result
 ![API Docs](./doc/api-docs.png)
 
 ## Step 4. Insert 10K data into Database
-- Python lib Method
+- Python lib Method with multi-processing
   - `docker-compose run python-env python ./script/insert_data_python.py`
 
 ## Step . Check Table Count

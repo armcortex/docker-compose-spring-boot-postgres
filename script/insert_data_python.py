@@ -3,7 +3,9 @@ import psycopg2
 import datetime
 import time
 from tqdm import tqdm
+from multiprocessing import Pool, cpu_count
 from libs.random_names import random_names
+
 
 INSERT_DATA_COUNT = 10000
 
@@ -39,7 +41,8 @@ class PostgresDatabaseManager:
                 host=self.config["host"]
             )
             self.cur = self.conn.cursor()
-            print("Connected to the database.")
+            if DEBUG_VERBOSE:
+                print("Connected to the database.")
         except Exception as e:
             print(f"An error occurred while connecting to the database: {e}")
 
@@ -47,7 +50,8 @@ class PostgresDatabaseManager:
         if self.conn:
             self.cur.close()
             self.conn.close()
-            print("Database connection closed.")
+            if DEBUG_VERBOSE:
+                print("Database connection closed.")
 
     def insert(self, table, data):
         columns = ', '.join(data.keys())
@@ -64,15 +68,37 @@ class PostgresDatabaseManager:
             self.conn.rollback()
             print(f"An error occurred while inserting data: {e}")
 
-def main():
+
+def insert_data(item_id=0):
     with PostgresDatabaseManager(DB_CONFIG) as db:
         # Insert data into the 'items' table
-        for id in tqdm(range(INSERT_DATA_COUNT), desc='Inserting data'):
-            item_data = {'first_name': random_names.First(),
-                         'last_name': random_names.Last(),
-                         'country': random_names.Country()
-                         }
-            db.insert('items', item_data)
+        item_data = {'first_name': random_names.First(),
+                     'last_name': random_names.Last(),
+                     'country': random_names.Country()
+                     }
+        db.insert('items', item_data)
+
+
+def single_processing():
+    for _ in tqdm(range(INSERT_DATA_COUNT), desc='Inserting data'):
+        insert_data()
+
+
+def multi_processing():
+    # Get CPU cores
+    process_count = min(cpu_count(), INSERT_DATA_COUNT)
+
+    # Create a pool of processes
+    with Pool(process_count) as pool:
+        for _ in tqdm(pool.imap_unordered(insert_data, range(INSERT_DATA_COUNT)),
+                      total=INSERT_DATA_COUNT,
+                      desc='Inserting data'):
+            pass
+
+
+def main():
+    # single_processing()
+    multi_processing()
 
 
 if __name__ == '__main__':
@@ -82,4 +108,3 @@ if __name__ == '__main__':
     end_time = time.perf_counter()
     print(f"Function executed in {end_time - start_time:.2f} seconds")
     print(f"Finished at {datetime.datetime.now()}")
-
