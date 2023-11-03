@@ -60,7 +60,12 @@ api-docs
 Result
 ![API Docs](./doc/api-docs.png)
 
-## Step 4. Check Table Count
+## Step 4. Insert 10K data into Database
+- Python lib Method
+  - `docker-compose exec python-env python ./script/insert_data_python.py`
+- POST Method
+
+## Step . Check Table Count
 - `docker-compose exec  postgresdb psql -U $POSTGRESDB_USER -d $POSTGRESDB_DATABASE -c "SELECT COUNT(*) FROM public.items;"`
 
 ## Remove All

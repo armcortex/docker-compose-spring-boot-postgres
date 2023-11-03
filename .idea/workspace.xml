@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="update doc/*.png">
+    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="update Item.java naming">
+      <change afterPath="$PROJECT_DIR$/script/insert_data_python.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -18,6 +19,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -39,29 +41,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.31105712",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mcs51/Library/CloudStorage/Dropbox/MAC_M2/Design/item/job/20230824/company/銓安智慧/20231102_assignment/docker-compose-spring-boot-postgres/demo-app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.31105712&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Docker.Demo">
     <configuration name="demo_app-endpoints | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/demo_app-endpoints.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
@@ -116,7 +119,8 @@
       <workItem from="1698936065159" duration="3681000" />
       <workItem from="1698939759180" duration="9337000" />
       <workItem from="1698999799955" duration="2042000" />
-      <workItem from="1699001852787" duration="14559000" />
+      <workItem from="1699001852787" duration="17631000" />
+      <workItem from="1699029502221" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Web ok via docker-compose">
       <option name="closed" value="true" />
@@ -246,7 +250,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699015738236</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update README.md using load .env file">
+      <option name="closed" value="true" />
+      <created>1699016628296</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1699016628296</updated>
+    </task>
+    <task id="LOCAL-00018" summary="update Item.java naming">
+      <option name="closed" value="true" />
+      <created>1699034576463</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1699034576463</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +300,9 @@
     <MESSAGE value="add explanations into README.md" />
     <MESSAGE value="add API's description code" />
     <MESSAGE value="update doc/*.png" />
-    <option name="LAST_COMMIT_MESSAGE" value="update doc/*.png" />
+    <MESSAGE value="update README.md using load .env file" />
+    <MESSAGE value="update Item.java naming" />
+    <option name="LAST_COMMIT_MESSAGE" value="update Item.java naming" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
