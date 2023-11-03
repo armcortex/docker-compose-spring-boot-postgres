@@ -1,5 +1,5 @@
 # docker-compose-spring-boot-postgres
-
+## Target
 1. 請實作一個 Java Spring Framework project
    可對 PostgreSQL 做存取
    POST /item
@@ -15,17 +15,47 @@
 3. 在 Database 內存放上萬筆資料
 
 4. 使用 python locust 對  GET API 做壓力測試
-   模擬五百位使用者同時呼叫                                      
-   產出測試報告
-   Reference :
-   https://locust.io/
+   模擬五百位使用者同時呼叫, 產出測試報告
+   Reference: https://locust.io/
 
-## Start Demo App
+## Step 1. Start Demo App
 - `docker-compose up`
+
+Make sure `docker ps`, 3 container is up
+![Docker PS](./doc/docker_ps.png)
+
+Demo App Home Page: http://localhost:8080
+![Demo App](./doc/demo_app_homepage.png)
+
+
+## Step 2. Test POST/GET Method
+- `docker-compose exec python-env python ./script/tests_post_get_method.py`
+
+Result
+![GET/POST Testing](./doc/post_get_tests.png)
+
+
+## Step 3. Check database table content
+- `docker-compose exec  postgresdb psql -U postgres -d user_db -c "SELECT t.* FROM public.items t LIMIT 5;"`
+
+After step 2., it should have 5 data in the table.
+
+Result
+![Database Query](./doc/db_query.png)
+
+## Step 4. Check OpenAPI 3.0
+swagger-ui
+- URL: http://localhost:8080/swagger-ui/index.html
+
+Result
+![OpenAPI Spec](./doc/openapi_spec.png)
+
+api-docs
+- URL: http://localhost:8080/v3/api-docs
+
+Result
+![API Docs](./doc/api-docs.png)
+
 
 ## Remove All
 - `docker compose down --rmi all`
-
-## Python Test POST/GET Method
-- `docker-compose exec python-env python ./script/post_get_test.py`
-![GET/POST Testing](./doc/post_get_tests.png)
