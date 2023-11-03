@@ -1,9 +1,13 @@
 import os
 import psycopg2
 import datetime
+import time
+from tqdm import tqdm
 from libs.random_names import random_names
 
-INSERT_DATA_COUNT = 10
+INSERT_DATA_COUNT = 10000
+
+DEBUG_VERBOSE = False
 
 DB_CONFIG = {
     "dbname": os.environ.get("DB_NAME", "test_db"),
@@ -54,7 +58,8 @@ class PostgresDatabaseManager:
         try:
             self.cur.execute(query, values)
             self.conn.commit()
-            print(f"Inserted data into {table=}, {data=}")
+            if DEBUG_VERBOSE:
+                print(f"Inserted data into {table=}, {data=}")
         except Exception as e:
             self.conn.rollback()
             print(f"An error occurred while inserting data: {e}")
@@ -62,7 +67,7 @@ class PostgresDatabaseManager:
 def main():
     with PostgresDatabaseManager(DB_CONFIG) as db:
         # Insert data into the 'items' table
-        for id in range(INSERT_DATA_COUNT):
+        for id in tqdm(range(INSERT_DATA_COUNT), desc='Inserting data'):
             item_data = {'id': id,
                          'first_name': random_names.First(),
                          'last_name': random_names.Last(),
@@ -73,6 +78,9 @@ def main():
 
 if __name__ == '__main__':
     print(f"Started at {datetime.datetime.now()}")
+    start_time = time.perf_counter()
     main()
+    end_time = time.perf_counter()
+    print(f"Function executed in {end_time - start_time:.2f} seconds")
     print(f"Finished at {datetime.datetime.now()}")
 
