@@ -12,10 +12,10 @@ INSERT_DATA_COUNT = 10000
 DEBUG_VERBOSE = False
 
 DB_CONFIG = {
-    "dbname": os.environ.get("DB_NAME", "test_db"),
-    "user": os.environ.get("DB_USER", "test_user"),
-    "password": os.environ.get("DB_PASSWORD", "test_password"),
-    "host": os.environ.get("DB_HOST", "localhost"),
+    'dbname': os.environ.get('DB_NAME', 'test_db'),
+    'user': os.environ.get('DB_USER', 'test_user'),
+    'password': os.environ.get('DB_PASSWORD', 'test_password'),
+    'host': os.environ.get('DB_HOST', 'localhost'),
 }
 
 
@@ -35,38 +35,38 @@ class PostgresDatabaseManager:
     def connect(self):
         try:
             self.conn = psycopg2.connect(
-                dbname=self.config["dbname"],
-                user=self.config["user"],
-                password=self.config["password"],
-                host=self.config["host"]
+                dbname=self.config['dbname'],
+                user=self.config['user'],
+                password=self.config['password'],
+                host=self.config['host']
             )
             self.cur = self.conn.cursor()
             if DEBUG_VERBOSE:
-                print("Connected to the database.")
+                print('Connected to the database.')
         except Exception as e:
-            print(f"An error occurred while connecting to the database: {e}")
+            print(f'An error occurred while connecting to the database: {e}')
 
     def close(self):
         if self.conn:
             self.cur.close()
             self.conn.close()
             if DEBUG_VERBOSE:
-                print("Database connection closed.")
+                print('Database connection closed.')
 
     def insert(self, table, data):
         columns = ', '.join(data.keys())
         placeholders = ', '.join(['%s'] * len(data))
         values = tuple(data.values())
 
-        query = f"INSERT INTO {table} ({columns}) VALUES ({placeholders})"
+        query = f'INSERT INTO {table} ({columns}) VALUES ({placeholders})'
         try:
             self.cur.execute(query, values)
             self.conn.commit()
             if DEBUG_VERBOSE:
-                print(f"Inserted data into {table=}, {data=}")
+                print(f'Inserted data into {table=}, {data=}')
         except Exception as e:
             self.conn.rollback()
-            print(f"An error occurred while inserting data: {e}")
+            print(f'An error occurred while inserting data: {e}')
 
 
 def insert_data(item_id=0):
@@ -102,9 +102,9 @@ def main():
 
 
 if __name__ == '__main__':
-    print(f"Started at {datetime.datetime.now()}")
+    print(f'Started at {datetime.datetime.now()}')
     start_time = time.perf_counter()
     main()
     end_time = time.perf_counter()
-    print(f"Function executed in {end_time - start_time:.2f} seconds")
-    print(f"Finished at {datetime.datetime.now()}")
+    print(f'Function executed in {end_time - start_time:.2f} seconds')
+    print(f'Finished at {datetime.datetime.now()}')
