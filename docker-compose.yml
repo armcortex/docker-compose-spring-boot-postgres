@@ -13,6 +13,7 @@ services:
       - $POSTGRESDB_LOCAL_PORT:$POSTGRESDB_DOCKER_PORT
     volumes:
       - db:/var/lib/postgres
+      - .:/app
   app:
     depends_on:
       - postgresdb

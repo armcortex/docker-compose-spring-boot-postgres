@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="update .idea">
+    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="python re-format &quot;&quot; -&gt; ''">
+      <change afterPath="$PROJECT_DIR$/script/export_table.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/import_table.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/locust_items_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile.python" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile.python" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/api-docs.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/api-docs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,7 +327,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699038673321</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="update result in README.md">
+      <option name="closed" value="true" />
+      <created>1699039086481</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1699039086481</updated>
+    </task>
+    <task id="LOCAL-00027" summary="python re-format &quot;&quot; -&gt; ''">
+      <option name="closed" value="true" />
+      <created>1699084247027</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1699084247027</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,8 +361,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Basic Web ok via docker-compose" />
-    <MESSAGE value="rename Main.java" />
     <MESSAGE value="add uiDesigner.xml" />
     <MESSAGE value="1. post, get method via PostgreSQL ok&#10;2. add test post/get bash script" />
     <MESSAGE value="clean" />
@@ -365,7 +384,9 @@
     <MESSAGE value="fix postgresql id key can't auto-increment in python issue" />
     <MESSAGE value="add multiprocessing method" />
     <MESSAGE value="update .idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="update .idea" />
+    <MESSAGE value="update result in README.md" />
+    <MESSAGE value="python re-format &quot;&quot; -&gt; ''" />
+    <option name="LAST_COMMIT_MESSAGE" value="python re-format &quot;&quot; -&gt; ''" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

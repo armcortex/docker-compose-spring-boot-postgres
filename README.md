@@ -75,3 +75,8 @@ Result
 
 ## Remove All
 - `docker-compose down --rmi all`
+
+## Helper scripts
+Some helper scripts to make life easier
+- [Load Database Table](./script/import_table.sh): `./script/import_table.sh`
+- [Export Database Table](./script/export_table.sh): `./script/export_table.sh`
