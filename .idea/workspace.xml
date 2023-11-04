@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="locust server ok">
+    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="locust server random stress POST test ok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile.python" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile.python" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/locust_items_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/locust_items_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,7 +353,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699088894794</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="locust server random stress POST test ok">
+      <option name="closed" value="true" />
+      <created>1699093339385</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1699093339385</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +379,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="clean" />
     <MESSAGE value="add python image in docker-compose.yml ok" />
     <MESSAGE value="add README.md" />
     <MESSAGE value="python test POST/GET via database ok&#10;&#10;1. Revise docker-compose.yml&#10;2. Add Dockerfile.python&#10;3. Add post_get_test.py" />
@@ -397,7 +403,8 @@
     <MESSAGE value="python re-format &quot;&quot; -&gt; ''" />
     <MESSAGE value="1. Add import/export table helper script&#10;2. update README.md for helper script" />
     <MESSAGE value="locust server ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="locust server ok" />
+    <MESSAGE value="locust server random stress POST test ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="locust server random stress POST test ok" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

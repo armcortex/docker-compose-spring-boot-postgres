@@ -73,6 +73,14 @@ Result
 Result
 ![Check Table Count](./doc/check_table_count.png)
 
+## Step 6. Locust Stress Test
+For CLI
+- ` docker-compose exec python-env /bin/bash -c "locust -f ./script/locust_items_test.py --headless --users 500 --spawn-rate 100 -H http://app:8080 --run-time 10m"`
+
+For WebUI
+- ` docker-compose exec python-env /bin/bash -c "locust -f ./script/locust_items_test.py --users 500 --spawn-rate 100 -H http://app:8080 --run-time 10m"`
+
+
 ## Remove All
 - `docker-compose down --rmi all`
 
