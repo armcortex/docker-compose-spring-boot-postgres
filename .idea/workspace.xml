@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="1. Add import/export table helper script&#10;2. update README.md for helper script">
-      <change afterPath="$PROJECT_DIR$/script/locust_items_test.py" afterDir="false" />
+    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="locust server ok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile.python" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile.python" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/locust_items_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/locust_items_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -347,7 +346,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699087542486</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="locust server ok">
+      <option name="closed" value="true" />
+      <created>1699088894793</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1699088894794</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +372,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1. post, get method via PostgreSQL ok&#10;2. add test post/get bash script" />
     <MESSAGE value="clean" />
     <MESSAGE value="add python image in docker-compose.yml ok" />
     <MESSAGE value="add README.md" />
@@ -390,7 +396,8 @@
     <MESSAGE value="update result in README.md" />
     <MESSAGE value="python re-format &quot;&quot; -&gt; ''" />
     <MESSAGE value="1. Add import/export table helper script&#10;2. update README.md for helper script" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Add import/export table helper script&#10;2. update README.md for helper script" />
+    <MESSAGE value="locust server ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="locust server ok" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

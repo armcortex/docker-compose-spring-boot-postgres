@@ -2,7 +2,7 @@ FROM python:3.11.6
 
 WORKDIR app
 
-COPY script/tests_post_get_method.py .
+COPY script/ .
 
 RUN pip install --no-cache-dir \
     requests \
