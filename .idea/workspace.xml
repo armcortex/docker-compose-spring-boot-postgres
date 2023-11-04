@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="locust server random stress POST test ok">
+    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="update README.md with  locust stress test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -361,7 +361,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699093339385</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="update README.md with  locust stress test">
+      <option name="closed" value="true" />
+      <created>1699094923997</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1699094923997</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +387,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add python image in docker-compose.yml ok" />
     <MESSAGE value="add README.md" />
     <MESSAGE value="python test POST/GET via database ok&#10;&#10;1. Revise docker-compose.yml&#10;2. Add Dockerfile.python&#10;3. Add post_get_test.py" />
     <MESSAGE value="Python unit test with truncate table&#10;&#10;1. add database envi to python-env docker-compose.yml&#10;2. add python lib in Dockerfile.python&#10;3. truncate table in post_get_test.py&#10;4." />
@@ -404,7 +411,8 @@
     <MESSAGE value="1. Add import/export table helper script&#10;2. update README.md for helper script" />
     <MESSAGE value="locust server ok" />
     <MESSAGE value="locust server random stress POST test ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="locust server random stress POST test ok" />
+    <MESSAGE value="update README.md with  locust stress test" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README.md with  locust stress test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

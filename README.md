@@ -80,6 +80,13 @@ For CLI
 For WebUI
 - ` docker-compose exec python-env /bin/bash -c "locust -f ./script/locust_items_test.py --users 500 --spawn-rate 100 -H http://app:8080 --run-time 10m"`
 
+Result: RPS 166<br>
+500 User Statistics
+![Locust Statistics](./doc/locust_chart_500_user.png)
+
+500 User Chart
+![Locust Chart](./doc/locust_chart_500_user.png)
+
 
 ## Remove All
 - `docker-compose down --rmi all`
