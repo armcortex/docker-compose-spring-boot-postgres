@@ -7,5 +7,6 @@ COPY script/tests_post_get_method.py .
 RUN pip install --no-cache-dir \
     requests \
     psycopg2 \
-    tqdm
+    tqdm \
+    locust
 
