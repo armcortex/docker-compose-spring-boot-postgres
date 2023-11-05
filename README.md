@@ -30,7 +30,7 @@ Load parameters into shell environments
 ## Step 1. Start Demo App
 - `docker-compose up -d`
 
-Make sure `docker ps`, `app, postgres, python`, 3 container is up
+Make sure using `docker ps` command to check, `app, postgres, python`, 3 container is up
 ![Docker PS](./doc/docker_ps.png)
 
 Demo App Home Page: http://localhost:8080
@@ -44,7 +44,7 @@ Result
 ![GET/POST Testing](./doc/post_get_tests.png)
 
 
-## Step 3. Check database table content
+## Step 3. Check Database Table Content
 - `docker-compose exec  postgresdb psql -U $POSTGRESDB_USER -d $POSTGRESDB_DATABASE -c "SELECT t.* FROM public.items t LIMIT 5;"`
 
 After step 2., it should have 5 data in the table.
@@ -65,7 +65,7 @@ api-docs
 Result
 ![API Docs](./doc/api-docs.png)
 
-## Step 4. Insert 10K data into Database
+## Step 4. Insert 10K Data Into Database
 - Python lib Method with multi-processing
   - `docker-compose run python-env python ./script/insert_data_python.py`
 
@@ -89,18 +89,31 @@ For WebUI
 - ` docker-compose exec python-env /bin/bash -c "locust -f ./script/locust_items_test.py --users 500 --spawn-rate 100 -H http://app:8080 --run-time 10m"`
 - URL: http://localhost:8089
 
-Result: RPS 166<br>
-500 User Statistics
-![Locust Statistics](./doc/locust_chart_500_user.png)
+### Locust Stress Test Conditions and Results
 
-500 User Chart
+- **Machine:** 2022 MacBook Air M2
+- **CPU:** 8-core
+- **RAM:** 24 GB
+- **Operating System:** macOS 13.4.1
+- **Test Conditions:**
+   - **Users:** 500 simulated users
+   - **Spawn Rate:** 100 users/sec
+- **Results:**
+   - **Requests Per Second (RPS):** 166
+- **Note:** Performance metrics are specific to the mentioned machine and 
+setup, and may vary on different hardware or configurations.
+
+### 500 User Statistics
+![Locust Statistics](./doc/locust_statistics_500_user.png)
+
+### 500 User Chart
 ![Locust Chart](./doc/locust_chart_500_user.png)
 
 
 ## Remove All
 - `docker-compose down --rmi all`
 
-## Helper scripts
+## Helper Scripts
 Some helper scripts to make life easier
 - [Load Database Table](./script/import_table.sh): `./script/import_table.sh`
 - [Export Database Table](./script/export_table.sh): `./script/export_table.sh`
