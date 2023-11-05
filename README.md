@@ -67,6 +67,9 @@ Result
 Result
 ![Insert 10k data](./doc/insert_10k.png)
 
+- Or you can use helper script [Import Table](./script/import_table.sh) to save your time
+   - `./script/import_table.sh`
+
 ## Step 5. Check Table Count
 - `docker-compose exec  postgresdb psql -U $POSTGRESDB_USER -d $POSTGRESDB_DATABASE -c "SELECT COUNT(*) FROM public.items;"`
 

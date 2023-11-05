@@ -1,4 +1,4 @@
-source ../.env
+source .env
 
 docker-compose exec postgresdb pg_dump \
   --clean \

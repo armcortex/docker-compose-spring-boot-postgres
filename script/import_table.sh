@@ -1,4 +1,4 @@
-source ../.env
+source .env
 
 docker-compose exec postgresdb psql \
   -U ${POSTGRESDB_USER} \
