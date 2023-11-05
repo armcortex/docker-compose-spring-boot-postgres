@@ -23,9 +23,9 @@ Load parameters into shell environments
 - `source .env`
 
 ## Step 1. Start Demo App
-- `docker-compose up`
+- `docker-compose up -d`
 
-Make sure `docker ps`, 3 container is up
+Make sure `docker ps`, `app, postgres, python`, 3 container is up
 ![Docker PS](./doc/docker_ps.png)
 
 Demo App Home Page: http://localhost:8080
@@ -79,6 +79,7 @@ For CLI
 
 For WebUI
 - ` docker-compose exec python-env /bin/bash -c "locust -f ./script/locust_items_test.py --users 500 --spawn-rate 100 -H http://app:8080 --run-time 10m"`
+- URL: http://localhost:8089
 
 Result: RPS 166<br>
 500 User Statistics
