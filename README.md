@@ -1,4 +1,9 @@
 # docker-compose-spring-boot-postgres
+A Java Spring and PostgreSQL project with CRUD API operations, 
+containerized setup, OpenAPI-compliant documentation, pre-filled data, 
+and Python Locust load tests for high concurrency simulation in Dockerized 
+environments.
+
 ## Target
 1. 請實作一個 Java Spring Framework project
    可對 PostgreSQL 做存取
