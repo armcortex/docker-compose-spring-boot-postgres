@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="update README.md with locust stress test">
+    <list default="true" id="ef7b973d-483b-4f5b-9501-e9d84ac9a2fc" name="Changes" comment="add random_names libs">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +121,7 @@
       <workItem from="1699001852787" duration="17631000" />
       <workItem from="1699029502221" duration="32000" />
       <workItem from="1699168983392" duration="8000" />
-      <workItem from="1699183950353" duration="817000" />
+      <workItem from="1699183950353" duration="9058000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Web ok via docker-compose">
       <option name="closed" value="true" />
@@ -379,7 +379,63 @@
       <option name="project" value="LOCAL" />
       <updated>1699109021397</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="update README.md with more helper script description">
+      <option name="closed" value="true" />
+      <created>1699184820830</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1699184820830</updated>
+    </task>
+    <task id="LOCAL-00034" summary="add model schema for insert_data_python.py">
+      <option name="closed" value="true" />
+      <created>1699190792698</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1699190792698</updated>
+    </task>
+    <task id="LOCAL-00035" summary="update README.md">
+      <option name="closed" value="true" />
+      <created>1699190864053</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1699190864053</updated>
+    </task>
+    <task id="LOCAL-00036" summary="1. update README.md&#10;2. revise import_table.sh, export_table.sh">
+      <option name="closed" value="true" />
+      <created>1699191540891</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1699191540891</updated>
+    </task>
+    <task id="LOCAL-00037" summary="update README.md">
+      <option name="closed" value="true" />
+      <created>1699192400370</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1699192400370</updated>
+    </task>
+    <task id="LOCAL-00038" summary="update README.md">
+      <option name="closed" value="true" />
+      <created>1699203686668</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1699203686668</updated>
+    </task>
+    <task id="LOCAL-00039" summary="add random_names libs">
+      <option name="closed" value="true" />
+      <created>1699203737551</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1699203737551</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,10 +453,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="python test POST/GET via database ok&#10;&#10;1. Revise docker-compose.yml&#10;2. Add Dockerfile.python&#10;3. Add post_get_test.py" />
-    <MESSAGE value="Python unit test with truncate table&#10;&#10;1. add database envi to python-env docker-compose.yml&#10;2. add python lib in Dockerfile.python&#10;3. truncate table in post_get_test.py&#10;4." />
-    <MESSAGE value="update readme with basic operate description" />
-    <MESSAGE value="add doc/pic" />
     <MESSAGE value="add OpenAPI func" />
     <MESSAGE value="rename files" />
     <MESSAGE value="add explanations into README.md" />
@@ -409,7 +461,6 @@
     <MESSAGE value="update README.md using load .env file" />
     <MESSAGE value="update Item.java naming" />
     <MESSAGE value="insert data into database on in insert_data_python.py" />
-    <MESSAGE value="update README.md" />
     <MESSAGE value="add tqdm.range" />
     <MESSAGE value="update README.md `docker-compose run` so that tqdm can display correctly" />
     <MESSAGE value="fix postgresql id key can't auto-increment in python issue" />
@@ -422,7 +473,12 @@
     <MESSAGE value="locust server random stress POST test ok" />
     <MESSAGE value="update README.md with  locust stress test" />
     <MESSAGE value="update README.md with locust stress test" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README.md with locust stress test" />
+    <MESSAGE value="update README.md with more helper script description" />
+    <MESSAGE value="add model schema for insert_data_python.py" />
+    <MESSAGE value="1. update README.md&#10;2. revise import_table.sh, export_table.sh" />
+    <MESSAGE value="update README.md" />
+    <MESSAGE value="add random_names libs" />
+    <option name="LAST_COMMIT_MESSAGE" value="add random_names libs" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
