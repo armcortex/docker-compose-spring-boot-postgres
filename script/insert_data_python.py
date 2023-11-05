@@ -4,6 +4,8 @@ import datetime
 import time
 from tqdm import tqdm
 from multiprocessing import Pool, cpu_count
+from dataclasses import dataclass, asdict
+
 from libs.random_names import random_names
 
 
@@ -69,14 +71,22 @@ class PostgresDatabaseManager:
             print(f'An error occurred while inserting data: {e}')
 
 
+@dataclass
+class ItemData:
+    first_name: str
+    last_name: str
+    country: str
+
+
 def insert_data(item_id=0):
     with PostgresDatabaseManager(DB_CONFIG) as db:
         # Insert data into the 'items' table
-        item_data = {'first_name': random_names.First(),
-                     'last_name': random_names.Last(),
-                     'country': random_names.Country()
-                     }
-        db.insert('items', item_data)
+        item_data = ItemData(
+            first_name=random_names.First(),
+            last_name=random_names.Last(),
+            country=random_names.Country()
+        )
+        db.insert('items', asdict(item_data))
 
 
 def single_processing():
