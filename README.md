@@ -45,12 +45,17 @@ Result
 
 
 ## Step 3. Check Database Table Content
+### 3.1
 - `docker-compose exec  postgresdb psql -U $POSTGRESDB_USER -d $POSTGRESDB_DATABASE -c "SELECT t.* FROM public.items t LIMIT 5;"`
 
 After step 2., it should have 5 data in the table.
 
 Result
 ![Database Query](./doc/db_query.png)
+
+### 3.2
+Truncate table
+- `docker-compose exec  postgresdb psql -U $POSTGRESDB_USER -d $POSTGRESDB_DATABASE -c "TRUNCATE TABLE items;"`
 
 ## Step 4. Check OpenAPI 3.0
 swagger-ui
@@ -66,7 +71,7 @@ Result
 ![API Docs](./doc/api-docs.png)
 
 ## Step 4. Insert 10K Data Into Database
-- Python lib Method with multi-processing
+- Python Method with multi-processing
   - `docker-compose run python-env python ./script/insert_data_python.py`
 
 Result
@@ -99,16 +104,17 @@ For WebUI
    - **Users:** 500 simulated users
    - **Spawn Rate:** 100 users/sec
 - **Results:**
-   - **Requests Per Second (RPS):** 166
+   - **Requests Per Second (RPS):** 164.8
 - **Note:** Performance metrics are specific to the mentioned machine and 
 setup, and may vary on different hardware or configurations.
 
 ### 500 User Statistics
-![Locust Statistics](./doc/locust_statistics_500_user.png)
+![Locust Statistics](./doc/locust_500_user_report/locust_statistics_500_user.png)
 
 ### 500 User Chart
-![Locust Chart](./doc/locust_chart_500_user.png)
+![Locust Chart](./doc/locust_500_user_report/locust_chart_500_user.png)
 
+[Other reports can be found in here](./doc/locust_500_user_report/): `./doc/locust_500_user_report/`
 
 ## Remove All
 - `docker-compose down --rmi all`
