@@ -95,3 +95,5 @@ Result: RPS 166<br>
 Some helper scripts to make life easier
 - [Load Database Table](./script/import_table.sh): `./script/import_table.sh`
 - [Export Database Table](./script/export_table.sh): `./script/export_table.sh`
+- [Simple Test POST Script](./script/tests_post_method.sh): `./script/tests_post_method.sh`
+- [Simple Test GET Script](./script/test_get_method.sh): `test_get_method.sh`
