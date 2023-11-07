@@ -28,7 +28,7 @@ Load parameters into shell environments
 - `source .env`
 
 ## Step 1. Start Demo App
-- `docker-compose up -d`
+- `docker compose up -d`
 
 Make sure using `docker ps` command to check, `app, postgres, python`, 3 container is up
 ![Docker PS](./doc/docker_ps.png)
@@ -38,7 +38,7 @@ Demo App Home Page: http://localhost:8080
 
 
 ## Step 2. Test POST/GET Method
-- `docker-compose exec python-env python ./script/tests_post_get_method.py`
+- `docker compose exec python-env python ./script/tests_post_get_method.py`
 
 Result
 ![GET/POST Testing](./doc/post_get_tests.png)
@@ -46,7 +46,7 @@ Result
 
 ## Step 3. Check Database Table Content
 ### 3.1
-- `docker-compose exec  postgresdb psql -U $POSTGRESDB_USER -d $POSTGRESDB_DATABASE -c "SELECT t.* FROM public.items t LIMIT 5;"`
+- `docker compose exec  postgresdb psql -U $POSTGRESDB_USER -d $POSTGRESDB_DATABASE -c "SELECT t.* FROM public.items t LIMIT 5;"`
 
 After step 2., it should have 5 data in the table.
 
@@ -55,7 +55,7 @@ Result
 
 ### 3.2
 Truncate table
-- `docker-compose exec  postgresdb psql -U $POSTGRESDB_USER -d $POSTGRESDB_DATABASE -c "TRUNCATE TABLE items;"`
+- `docker compose exec  postgresdb psql -U $POSTGRESDB_USER -d $POSTGRESDB_DATABASE -c "TRUNCATE TABLE items;"`
 
 ## Step 4. Check OpenAPI 3.0
 swagger-ui
@@ -72,7 +72,7 @@ Result
 
 ## Step 4. Insert 10K Data Into Database
 - Python Method with multi-processing
-  - `docker-compose run python-env python ./script/insert_data_python.py`
+  - `docker compose run python-env python ./script/insert_data_python.py`
 
 Result
 ![Insert 10k data](./doc/insert_10k.png)
@@ -81,17 +81,17 @@ Result
    - `./script/import_table.sh`
 
 ## Step 5. Check Table Count
-- `docker-compose exec  postgresdb psql -U $POSTGRESDB_USER -d $POSTGRESDB_DATABASE -c "SELECT COUNT(*) FROM public.items;"`
+- `docker compose exec  postgresdb psql -U $POSTGRESDB_USER -d $POSTGRESDB_DATABASE -c "SELECT COUNT(*) FROM public.items;"`
 
 Result
 ![Check Table Count](./doc/check_table_count.png)
 
 ## Step 6. Locust Stress Test
 For CLI
-- ` docker-compose exec python-env /bin/bash -c "locust -f ./script/locust_items_test.py --headless --users 500 --spawn-rate 100 -H http://app:8080 --run-time 10m"`
+- ` docker compose exec python-env /bin/bash -c "locust -f ./script/locust_items_test.py --headless --users 500 --spawn-rate 100 -H http://app:8080 --run-time 10m"`
 
 For WebUI
-- ` docker-compose exec python-env /bin/bash -c "locust -f ./script/locust_items_test.py --users 500 --spawn-rate 100 -H http://app:8080 --run-time 10m"`
+- ` docker compose exec python-env /bin/bash -c "locust -f ./script/locust_items_test.py --users 500 --spawn-rate 100 -H http://app:8080 --run-time 10m"`
 - URL: http://localhost:8089
 
 ### Locust Stress Test Conditions and Results
@@ -117,11 +117,11 @@ setup, and may vary on different hardware or configurations.
 [Other reports can be found in here](./doc/locust_500_user_report/): `./doc/locust_500_user_report/`
 
 ## Remove All
-- `docker-compose down --rmi all`
+- `docker compose down --rmi all`
 
 ## Helper Scripts
 Some helper scripts to make life easier
 - [Load Database Table](./script/import_table.sh): `./script/import_table.sh`
 - [Export Database Table](./script/export_table.sh): `./script/export_table.sh`
 - [Simple Test POST Script](./script/tests_post_method.sh): `./script/tests_post_method.sh`
-- [Simple Test GET Script](./script/test_get_method.sh): `./script/test_get_method.sh`
+- [Simple Test GET Script](./script/tests_get_method.sh): `./script/tests_get_method.sh`
