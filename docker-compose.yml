@@ -47,6 +47,7 @@ services:
       - DB_USER=$POSTGRESDB_USER
       - DB_PASSWORD=$POSTGRESDB_ROOT_PASSWORD
       - DB_NAME=$POSTGRESDB_DATABASE
+      - DB_TABLE=$POSTGRESDB_TABLE
     ports:
       - 8089:8089
     stdin_open: true

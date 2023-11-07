@@ -3,6 +3,7 @@ import unittest
 import requests
 import psycopg2
 import datetime
+import time
 
 BASE_URL = "http://app:8080/item"
 
@@ -31,6 +32,16 @@ def drop_table_if_exists(cursor, table_name):
         TRUNCATE TABLE {table_name};
     """)
 
+def check_table_exist(cursor, table_name):
+    cursor.execute(f"""
+        SELECT EXISTS (
+            SELECT FROM information_schema.tables 
+            WHERE table_schema = 'public'
+            AND table_name = '{table_name}'
+        );
+    """)
+    return cursor.fetchone()[0]
+
 
 def deep_compare(d1, d2):
     if isinstance(d1, dict) and isinstance(d2, dict):
@@ -51,8 +62,18 @@ class TestItemAPI(unittest.TestCase):
         print(f"Tests started at {datetime.datetime.now()}")
         cls.connection = psycopg2.connect(**DB_CONFIG)
         cls.connection.autocommit = True
+        table_name = os.environ.get("DB_TABLE", "test_table")
         with cls.connection.cursor() as cursor:
-            drop_table_if_exists(cursor, "items")
+            print(f"Wait for table: {table_name} ready, it will take 1 minute to finish")
+            while True:
+                if check_table_exist(cursor, table_name):
+                    break
+                else:
+                    print(".", end="", flush=True)
+                    time.sleep(1)
+
+            print(f"\n Table: {table_name} is ready")
+            drop_table_if_exists(cursor, table_name)
 
     @classmethod
     def tearDownClass(cls):
